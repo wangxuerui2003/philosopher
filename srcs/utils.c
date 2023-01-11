@@ -6,7 +6,7 @@
 /*   By: wxuerui <wxuerui@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/11 15:04:46 by wxuerui           #+#    #+#             */
-/*   Updated: 2023/01/11 15:53:35 by wxuerui          ###   ########.fr       */
+/*   Updated: 2023/01/11 16:30:47 by wxuerui          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,12 +42,12 @@ int	ft_atoi(char *str)
 }
 
 /**
- * @brief Checks whether the time inputted is valid, i.e. non-negative integer
+ * @brief Checks whether the number inputted is positive or 0
  * 
- * @param str the time will be checked
+ * @param str the number will be checked
  * @return success 1, fails 0
  */
-int	ft_istime(char *str)
+int	ft_isposint(char *str)
 {
 	int	i;
 

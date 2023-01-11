@@ -6,7 +6,7 @@
 /*   By: wxuerui <wxuerui@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/11 15:05:07 by wxuerui           #+#    #+#             */
-/*   Updated: 2023/01/11 16:03:33 by wxuerui          ###   ########.fr       */
+/*   Updated: 2023/01/11 16:39:18 by wxuerui          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,8 +53,12 @@ typedef struct {
 	t_fork			*left_fork;
 	t_fork			*right_fork;
 	t_args			*args;
+	t_timeval		last_eat;
+	int				times_ate;
 }	t_philo;
 
-int	ft_atoi(char *str);
+int			ft_atoi(char *str);
+int			ft_isposint(char *str);
+t_args		*take_input(int ac, char **av);
 
 #endif
